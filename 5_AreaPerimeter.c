@@ -16,6 +16,6 @@ int main()
 	printf("Perimeter of square: %f\n", (4*side));	//perimeter of square
 	printf("Area of rectangle: %f\n", (length*breadth));	//area of rectangle
 	printf("Perimeter of rectangle: %f\n", (2*(length+breadth)));	//perimeter of rectangle
-	return 0;	//return statememt
+	return 0;	//return statement
 }
 //end of the main body function

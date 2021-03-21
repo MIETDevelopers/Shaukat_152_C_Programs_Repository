@@ -35,6 +35,6 @@ int main() {
 			printf("ERROR!");
 			break;
 	}
-	return 0;	//return statememt
+	return 0;	//return statement
 }
 //end of the main body function

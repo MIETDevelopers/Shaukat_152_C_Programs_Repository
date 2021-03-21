@@ -18,6 +18,6 @@ int main()
 		printf("Number is odd.");
 	}
 
-	return 0;	//return statememt
+	return 0;	//return statement
 }
 //end of the main body function

@@ -14,6 +14,6 @@ int main()
 
 	value = ((x1-y1)*(x1-y1))+((x2-y2)*(x2-y2));
 	printf("Euclidean Distance between the given points is: %lf \n",sqrt(value));
-	return 0;	//return statememt
+	return 0;	//return statement
 }
 //end of the main body function
