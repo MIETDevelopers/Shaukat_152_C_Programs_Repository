@@ -5,8 +5,6 @@
 //Start of the main body function
 int main() {
 
-   int max;
-
     int numbers[10]; //declaration of an array.
 
     //for loop to insert values to the array.
