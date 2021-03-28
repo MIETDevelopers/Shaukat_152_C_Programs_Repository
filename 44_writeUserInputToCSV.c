@@ -1,17 +1,24 @@
 //Purpose: Takes student data and writes it on a CSV file.
 //Author: Shaukat Ishtiaq
 //Date: 03-27-2021
-#include <stdio.h>	//Preprocessor directive to include standard input output header file
+#include <stdio.h>  //Preprocessor directive to include standard input output header file
 //Start of the main body function
 int main() {
-    FILE *pointer = fopen("student.csv","w");
+    FILE *pointer = fopen("student.csv","W");
 
     char name[10];
-    int rollNo;
+    int rollNo,n    ;
     float attendancePercentage;
 
+    fprintf(pointer,"Name,RollNo,Percentage\n");
+
+    printf("Number of students: ");
+    scanf("%d",&n);
+
+    for(int i=0;i<n;i++) {
+
     printf("Name: ");
-    gets(name);
+    scanf("%s",name);
 
     printf("Roll No: ");
     scanf("%d",&rollNo);
@@ -19,8 +26,9 @@ int main() {
     printf("Attendance percentage: ");
     scanf("%f",&attendancePercentage);
 
-    fprintf(pointer,"Name,RollNo,Percentage\n");
+
     fprintf(pointer,"%s,%d,%f\n",name,rollNo,attendancePercentage);
+    }
     fclose(pointer);
     return 0;   //return statement
 }
